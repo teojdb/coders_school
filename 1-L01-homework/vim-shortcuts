@@ -1,0 +1,46 @@
+Przydatne:
+shift+I (znak) ESC ESC - komentowanie linijek
+x - usunięcie znaku na kursorze 
+A - pisanie na końcu zdania
+:x - to samo co :wq
+yy p - dublowanie linijki
+:!(terminal komenda), np. :!ls
+Parujący nawias (kursor na nawias) + %
+Podmiana w całej linii - :s/czaas/czas/g
+wpisz: :#,#s/stare/nowe/g gdzie #,# są numerami linii ograniczających
+                          region, gdzie ma nastąpić zamiana.
+wpisz  :%s/stare/nowe/g   by zmienić wszystkie wystąpienia w całym pliku.
+wpisz  :%s/stare/nowe/gc  by zmienić wszystkie wystąpienia w całym
+                          pliku, prosząc o potwierdzenie za każdym razem.
+
+0 - początek linijka
+$ - koniec linijki
+w - początek następnego wyrazu
+e - koniec wyrazu
+
+Opetatory:
+d - delete
+c - change
+
+Zasada: operator(d) + liczba + ruch
+
+Usuwnanie
+d2w (usun 2 wyrazy)
+2dd - usn dwie linijki
+dd + p = usun linie i wklej (kursor na linii wyzej)
+
+Zmiany w pliku
+u - undo last change
+U - undo changes in line
+CTRL + R = :redo
+
+Changes:
+r + znak = REPLACE znak na kursorze
+ce - zmień tekst do końca wyrazu (włącza insert)
+
+Przejdz do linii
+:numer linii = numer linii G
+CTRL + G - pozycja kusora w pliku
+
+
+
