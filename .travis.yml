@@ -1,0 +1,23 @@
+language: cpp
+
+os: osx
+
+compiler:
+  - g++
+
+addons:
+         apt:
+                packages:
+                        - g++-9
+
+script:
+        - CXX=/usr/local/bin/g++-9
+	- make
+
+after_success:
+        - echo "success"
+
+after_failure:
+        - echo "failure" 
+
+
