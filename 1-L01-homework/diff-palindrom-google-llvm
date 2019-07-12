@@ -1,0 +1,7 @@
+13c13,14
+<     if (wyraz[i] != wyraz[dlugosc - 1 - i]) flag += 1;
+---
+>     if (wyraz[i] != wyraz[dlugosc - 1 - i])
+>       flag += 1;
+
+# Widać różnicę w formatowaniu intrukcji w if'ie ;-)
